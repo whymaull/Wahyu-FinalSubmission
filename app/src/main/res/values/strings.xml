@@ -1,0 +1,199 @@
+<resources>
+    <string name="app_name">Wahyu-FinalSubmission</string>
+    <string name="nama_aplikasi">DELIMA MOTORS</string>
+    <string name="tagline_aplikasi">Authirozed Yamaha Partner</string>
+    <string name="myname">Wahyu Maulana Aditya</string>
+    <string name="myemail">first.wahyumaul21@gmail.com</string>
+    <string name="article_name">Jenis Motor</string>
+    <string name="article_harga">Harga Motor</string>
+    <string name="specification">Spesifikasi</string>
+    <string name="article_description">Deskripsi Singkat</string>
+    <string name="article_mesin">Tipe Mesin</string>
+    <string name="article_silinder">Susunan Silinder</string>
+    <string name="article_kompresi">Perbandingan Kompresi</string>
+    <string name="article_cc">Volume Silinder</string>
+    <string name="article_bahanbakar">Jenis Bahan Bakar</string>
+    <string name="contact">Hubungi Saya</string>
+    
+    <integer-array name="article_photo">
+        <item>@drawable/aerox155</item>
+        <item>@drawable/fino125</item>
+        <item>@drawable/freego</item>
+        <item>@drawable/gear125</item>
+        <item>@drawable/lexi125</item>
+        <item>@drawable/miom3</item>
+        <item>@drawable/mt15</item>
+        <item>@drawable/mxking</item>
+        <item>@drawable/nmax155</item>
+        <item>@drawable/r15m</item>
+        <item>@drawable/vixion155</item>
+        <item>@drawable/wr155</item>
+        <item>@drawable/xride</item>
+        <item>@drawable/xsr155</item>
+    </integer-array>
+    
+    <string-array name="article_name">
+        <item>Aerox 155</item>
+        <item>Fino 125</item>
+        <item>FreeGo 125</item>
+        <item>Gear 125</item>
+        <item>Lexi 125</item>
+        <item>Mio M3 125</item>
+        <item>MT 15</item>
+        <item>MX King 150</item>
+        <item>Nmax 155</item>
+        <item>R15M</item>
+        <item>Vixion 155</item>
+        <item>WR 155</item>
+        <item>Xride 125</item>
+        <item>XSR 155</item>
+    </string-array>
+    
+    <string-array name="article_harga">
+        <item>Rp. 27.425.000</item>
+        <item>Rp. 20.150.000</item>
+        <item>Rp. 21.400.000</item>
+        <item>Rp. 18.205.000</item>
+        <item>Rp. 23.000.000</item>
+        <item>Rp. 17.405.000</item>
+        <item>Rp. 38.525.000</item>
+        <item>Rp. 25.870.000</item>
+        <item>Rp. 31.615.000</item>
+        <item>Rp. 39.875.000</item>
+        <item>Rp. 29.275.000</item>
+        <item>Rp. 38.600.000</item>
+        <item>Rp. 19.960.000</item>
+        <item>Rp. 37.775.000</item>
+    </string-array>
+    
+    <string-array name="article_description">
+        <item>Yamaha New Aerox 155 ABS Connected ialah skuter matik terlengkap yang sempurna buat Kamu.
+            \nMesin Blue Core 155 cc yang dilengkapi dengan teknologi serta fitur terkini.
+            \nMesin Lebih Profesional. Terus menjadi Di Depan</item>
+        <item>Yamaha Fino 125 Blue Core adalah sepeda motor Matic yang menggunakan teknologi blue core yang irit, halus, dan nyaman.
+            Dilengkapi dengan mesin berkapsitas 125 cc tapi irit 50 %.
+            \nNew Fino 125 Blue Core didukung dengan fitur-fitur terbaru, serta Smart Side Stand Switch yang cocok untuk aktivitas Anda sehari-hari.</item>
+        <item>Yamaha Freego Dengan desain yang elegan, ternyata mesin yang digunakan Yamaha Freego cukup elegan juga.
+            \nMesin yang digunakan berkapasitas 125cc dengan tipe mesin Air Cooled 4-stroke, SOHC.
+            \nDari mesin ini motor Yamaha Freego bisa menghasilkan tenaga sebesar 7.0 kW pada 8.000 rpm dengan torsi puncak sebesar 9.5 Nm pada 5.500 rpm.</item>
+        <item>Yamaha Gear 125 Standar Blue Core Tubeless dan Ban Lebar menjadi pionir di kelas skutik entry level yang menggunakan lampu LED Headlight.
+            \nDengan ruang kaki yang lebih lebar, mendukung aktivitas anak muda aktif.
+            \nMotor ini juga dilengkapi kait barang yang bisa dilipat sehingga lebih praktis dan berkelas, Cukup dengan menekan tombolnya satu kali maka alarm berbunyi dan pengendara akan tahu posisi motor.
+            \nDilengkapi pula dengan lampu hazard untuk memberi tanda dalam situasi darurat.</item>
+        <item>Yamaha Lexi direncanakan dan dikembangkan menjadi produk yang trendi di segmen premium.
+            \nDengan konsep High-Value Utility Commuter Model, Yamaha Lexi menyajikan kepraktisan dan berbagai fitur modern dengan tampilan yang menarik perhatian pelanggan.
+            \nLexi dibuat dengan konsep baru Maxi Yamaha yang membuatnya sangat praktis dan elegan.
+            \nLexi memiliki 4 keunggulan utama yang tentu saja berbeda.</item>
+        <item>Konsisten menjadi pilihan sepeda motor tanpa kompromi bagi masyarakat Indonesia, kini Yamaha Mio M3 hadir dengan 4 (empat) pilihan warna baru.
+            \nTampilannya yang semakin young dan trendy membuat skutik ini cocok digunakan untuk para kawula muda, baik pria maupun wanita.
+            \nSemakin unggul karena menggunakan mesin 125 cc berteknologi Blue Core yang tahan lama, irit, dan praktis untuk digunakan sehari-hari.</item>
+        <item>Yamaha MT15 merupakan representasi atas gaya berkendara masa kini,
+            \nHal tersebut dapat dilihat melalui desain motor yang lebih agresif, penambahan fitur terbaru, serta optimalisasi mesin yang lebih bertenaga.
+            \nKami optimis Yamaha MT15 akan mendapat respon yang sangat positif dari masyarakat dan menjadi trend setter di kalangan para pecinta naked sport kedepannya</item>
+        <item>Motor ini memiliki desain yang aerodinamis dan sporty, dengan dimensi yang cukup kompak sehingga cocok digunakan di perkotaan.
+            \nYamaha MX King dilengkapi dengan mesin 150cc, 4 langkah, 4 klep, SOHC, dan sistem bahan bakar injeksi, yang mampu menghasilkan tenaga maksimum 11,1 kW pada 8.000 rpm dan torsi maksimum 14,5 Nm pada 6.500 rpm.
+            \nMotor ini juga dilengkapi dengan teknologi Blue Core yang mengoptimalkan efisiensi bahan bakar dan performa mesin.</item>
+        <item>Yamaha All New Nmax 155 connected ABS ialah skuter matik terlengkap yang sempurna buat Kamu.
+            \nMesin Blue Core 155 cc yang dilengkapi dengan teknologi serta fitur terkini.
+            \nTeknologi dan Fitur Terkini. Mesin Lebih Profesional. Terus menjadi Di Depan.</item>
+        <item>Yamaha All New R15M ABS memiliki desain generasi terbaru R-Series dengan R-DNA dan memadukan karakter line up motor Yamaha berkapasitas besar.
+            \nTampilan barunya terlihat dari M-Shaped Intake Duct yang merupakan saluran udara berbentuk M diadopsi dari gaya YZR-M1.
+            Pada bagian itu terdapat satu lampu utama dengan projector LED dan ditambah lagi dengan Twin Eyes LED Position Light terinspirasi dari YZF-R1 dan YZF-R7 yang makin menguatkan visualisasi gagah serta agresifnya wajah motor ini.</item>
+        <item>Yamaha All New Vixion R The Legend merupakan sepeda motor dengan performa yang gesit dan bertenaga, siap tampil di segala rintangan menjadi yang terdepan.
+            \nMotor Yamaha All New Vixion R ini mempunyai beberapa fitur diantaranya Desain lampu utama dan model visor yang agresif membuat tampilannya sporty dan aerodinamis.
+            \nSistem pendingin mesin tipe cairan, suhu mesin stabil dan performa maksimal.</item>
+        <item>Yamaha WR 155 R dilengkapi mesin 155 cc yang handal di segala medan.
+            \nMesin Lebih Handal. Teknologi dan Fitur Terbaru</item>
+        <item>Yamaha Xride 125 di sektor mesin yang kini menggunakan 125 cc Blue Core.
+            \nMesin ini sanggup menghentakkan tenaga 9,5 ps dan torsi 9,6 Nm yang disalurkan ke roda belaka melalui transmisi full otomatis.
+            \nSetangnya dibuat lebih lebar, dengan alasan meningkatkan stabilitas dan mempermudah manuver.</item>
+        <item>Yamaha XSR 155 yakni simbol atas ekspresi tren style hidup dan amp, Dengan campuran nilai peninggalan masa kemudian dan sentuhan teknologi masa saat ini,
+            \nYamaha XSR 155 diyakini sanggup menyajikan sensasi berkendara yg lebih mengasyikkan lewat tampilan desain motor yang berkonsep sport heritage, fitur berkendara modern, dan performa mesin yang andal serta bertenaga.</item>
+    </string-array>
+    
+    <string-array name="article_mesin">
+        <item>Liquid cooled 4-stroke, SOHC</item>
+        <item>Air cooled, 4-stroke, SOHC</item>
+        <item>Air Cooled 4-Stroke,SOHC</item>
+        <item>Air Cooled 4-Stroke,SOHC</item>
+        <item>Liquid Cooled 4-stroke, SOHC</item>
+        <item>Air Cooled 4-Stroke,SOHC</item>
+        <item>Liquid cooled, 4-Stroke, SOHC, 4</item>
+        <item>Liquid cooled, 4-Stroke, SOHC, 4</item>
+        <item>Liquid cooled, 4-Stroke, SOHC, 4</item>
+        <item>Liquid cooled, 4-Stroke, SOHC, 4</item>
+        <item>Liquid cooled, 4-Stroke, SOHC, 4</item>
+        <item>Liquid cooled, 4-Stroke, SOHC, 4</item>
+        <item>Air Cooled 4-Stroke,SOHC</item>
+        <item>Liquid cooled, 4-Stroke, SOHC, 4</item>
+    </string-array>
+    
+    <string-array name="article_silinder">
+        <item>Silinder Tunggal</item>
+        <item>Silinder Tunggal</item>
+        <item>Silinder Tunggal</item>
+        <item>Silinder Tunggal</item>
+        <item>Silinder Tunggal</item>
+        <item>Silinder Tunggal</item>
+        <item>Silinder Tunggal</item>
+        <item>Silinder Tunggal</item>
+        <item>Silinder Tunggal</item>
+        <item>Silinder Tunggal</item>
+        <item>Silinder Tunggal</item>
+        <item>Silinder Tunggal</item>
+        <item>Silinder Tunggal</item>
+        <item>Silinder Tunggal</item>
+    </string-array>
+    
+    <string-array name="article_kompresi">
+        <item>11.6 : 1</item>
+        <item>9.5 : 1</item>
+        <item>9.5 : 1</item>
+        <item>9.5 : 1</item>
+        <item>11.6 : 1</item>
+        <item>9.5 : 1</item>
+        <item>11.6 : 1</item>
+        <item>10.4 : 1</item>
+        <item>11.6 : 1</item>
+        <item>11.6 : 1</item>
+        <item>11.6 : 1</item>
+        <item>11.6 : 1</item>
+        <item>9.5 : 1</item>
+        <item>11.6 : 1</item>
+    </string-array>
+    
+    <string-array name="article_cc">
+        <item>155 CC</item>
+        <item>125 CC</item>
+        <item>125 CC</item>
+        <item>125 CC</item>
+        <item>125 CC</item>
+        <item>125 CC</item>
+        <item>155 CC</item>
+        <item>150 CC</item>
+        <item>155 CC</item>
+        <item>155 CC</item>
+        <item>155 CC</item>
+        <item>155 CC</item>
+        <item>125 CC</item>
+        <item>155 CC</item>
+    </string-array>
+    
+    <string-array name="article_bahanbakar">
+        <item>Bensin</item>
+        <item>Bensin</item>
+        <item>Bensin</item>
+        <item>Bensin</item>
+        <item>Bensin</item>
+        <item>Bensin</item>
+        <item>Bensin</item>
+        <item>Bensin</item>
+        <item>Bensin</item>
+        <item>Bensin</item>
+        <item>Bensin</item>
+        <item>Bensin</item>
+        <item>Bensin</item>
+        <item>Bensin</item>
+    </string-array>
+    
+</resources>
