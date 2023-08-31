@@ -10,17 +10,31 @@ class DetailMotor : AppCompatActivity() {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_detail_motor)
 
-		val motor = intent.getParcelableExtra<Motor>("motor")
-		motor?.let {
-			findViewById<TextView>(R.id.article_name).text = it.nama
-			findViewById<TextView>(R.id.article_harga).text = it.harga
-			findViewById<TextView>(R.id.article_description).text = it.deskripsi
-			findViewById<TextView>(R.id.article_mesin).text = it.mesin
-			findViewById<TextView>(R.id.article_silinder).text = it.silinder
-			findViewById<TextView>(R.id.article_kompresi).text = it.kompresi
-			findViewById<TextView>(R.id.article_cc).text = it.cc
-			findViewById<TextView>(R.id.article_bahanbakar).text = it.bahanBakar
-			findViewById<ImageView>(R.id.img_article_photo).setImageResource(it.photo)
+		val selectedMotor = intent.getParcelableExtra<Motor>("motor")
+
+		selectedMotor?.let { motor ->
+			supportActionBar?.title = motor.nama
+
+			val imgDetailPhoto: ImageView = findViewById(R.id.img_detail_photo)
+			val tvArticleName: TextView = findViewById(R.id.tv_article_name)
+			val tvArticleHarga: TextView = findViewById(R.id.tv_article_harga)
+			val tvArticleDescription: TextView = findViewById(R.id.tv_article_description)
+			val tvArticleMesin: TextView = findViewById(R.id.tv_article_mesin)
+			val tvArticleSilinder: TextView = findViewById(R.id.tv_article_silinder)
+			val tvArticleKompresi: TextView = findViewById(R.id.tv_article_kompresi)
+			val tvArticleCC: TextView = findViewById(R.id.tv_article_cc)
+			val tvArticleBahanBakar: TextView = findViewById(R.id.tv_article_bahanbakar)
+
+			imgDetailPhoto.setImageResource(motor.photo)
+			tvArticleName.text = motor.nama
+			tvArticleHarga.text = motor.harga
+			tvArticleDescription.text = motor.deskripsi
+			tvArticleMesin.text = motor.mesin
+			tvArticleSilinder.text = motor.silinder
+			tvArticleKompresi.text = motor.kompresi
+			tvArticleCC.text = motor.cc
+			tvArticleBahanBakar.text = motor.bahanBakar
 		}
 	}
+
 }

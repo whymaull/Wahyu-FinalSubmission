@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 		val bottomNavigation: BottomNavigationView = findViewById(R.id.bottom_navigation)
 		bottomNavigation.setOnNavigationItemSelectedListener { menuItem ->
 			when (menuItem.itemId) {
-				R.id.navigation_home -> {					// Tambahkan kode navigasi ke halaman Home di sini
+				R.id.navigation_home -> {
 					true
 				}
 				R.id.navigation_about -> {
@@ -41,18 +41,17 @@ class MainActivity : AppCompatActivity() {
 	private fun getListMotor(): ArrayList<Motor> {
 		val articleName = resources.getStringArray(R.array.article_name)
 		val articleHarga = resources.getStringArray(R.array.article_harga)
+		val articlePhoto = resources.obtainTypedArray(R.array.article_photo)
 		val articleDescription = resources.getStringArray(R.array.article_description)
 		val articleMesin = resources.getStringArray(R.array.article_mesin)
 		val articleSilinder = resources.getStringArray(R.array.article_silinder)
 		val articleKompresi = resources.getStringArray(R.array.article_kompresi)
 		val articleCC = resources.getStringArray(R.array.article_cc)
 		val articleBahanBakar = resources.getStringArray(R.array.article_bahanbakar)
-		val articlePhoto = resources.obtainTypedArray(R.array.article_photo)
-
 
 		val listMotor = ArrayList<Motor>()
 		for (i in articleName.indices) {
-			val motor = Motor(articleName[i], articleHarga[i], articleDescription[i], articleMesin[i], articleSilinder[i], articleKompresi[i], articleCC[i], articleBahanBakar[i], articlePhoto.getResourceId(i, -1))
+			val motor = Motor(articleName[i], articleHarga[i],  articlePhoto.getResourceId(i, -1),articleDescription[i], articleMesin[i], articleSilinder[i], articleKompresi[i], articleCC[i], articleBahanBakar[i])
 			listMotor.add(motor)
 		}
 		return listMotor
@@ -71,7 +70,9 @@ class MainActivity : AppCompatActivity() {
 	}
 
 	private fun showSelectedMotor(data: Motor) {
-		TODO("Not yet implemented")
+		val intent = Intent(this, DetailMotor::class.java)
+		intent.putExtra("motor", data)
+		startActivity(intent)
 	}
 
 	private fun navigateToAbout() {

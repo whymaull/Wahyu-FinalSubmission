@@ -71,6 +71,7 @@
             </FrameLayout>
             
             <TextView
+                    android:id="@+id/tv_article_name"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:layout_marginLeft="16dp"
@@ -81,6 +82,7 @@
                     android:textSize="32sp"/>
             
             <TextView
+                    android:id="@+id/tv_article_harga"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:layout_marginLeft="16dp"
@@ -92,12 +94,12 @@
                     android:textStyle="bold"/>
             
             <TextView
+                    android:id="@+id/tv_article_description"
                     android:layout_width = "match_parent"
                     android:layout_height = "wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="16dp"
-                    android:lineSpacingMultiplier="6"
                     android:text="@string/article_description"/>
             
             <TextView
@@ -128,6 +130,7 @@
                             android:text = "@string/article_mesin"
                             android:textSize = "14sp"/>
                     <TextView
+                            android:id="@+id/tv_article_mesin"
                             android:layout_width = "match_parent"
                             android:layout_height = "wrap_content"
                             android:layout_weight = "1"
@@ -147,6 +150,7 @@
                             android:textSize="14sp"
                             android:text="@string/article_silinder"/>
                     <TextView
+                            android:id="@+id/tv_article_silinder"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -165,6 +169,7 @@
                             android:textSize="14sp"
                             android:text="@string/article_kompresi"/>
                     <TextView
+                            android:id="@+id/tv_article_kompresi"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -183,6 +188,7 @@
                             android:textSize="14sp"
                             android:text="@string/article_cc"/>
                     <TextView
+                            android:id="@+id/tv_article_cc"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -201,6 +207,7 @@
                             android:textSize="14sp"
                             android:text="@string/article_bahanbakar"/>
                     <TextView
+                            android:id="@+id/tv_article_bahanbakar"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
