@@ -1,9 +1,11 @@
 package com.example.wahyu_finalsubmission
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class DetailMotor : AppCompatActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +16,6 @@ class DetailMotor : AppCompatActivity() {
 
 		selectedMotor?.let { motor ->
 			supportActionBar?.title = motor.nama
-
 			val imgDetailPhoto: ImageView = findViewById(R.id.img_detail_photo)
 			val tvArticleName: TextView = findViewById(R.id.tv_article_name)
 			val tvArticleHarga: TextView = findViewById(R.id.tv_article_harga)
@@ -34,7 +35,7 @@ class DetailMotor : AppCompatActivity() {
 			tvArticleKompresi.text = motor.kompresi
 			tvArticleCC.text = motor.cc
 			tvArticleBahanBakar.text = motor.bahanBakar
+
 		}
 	}
-
 }
