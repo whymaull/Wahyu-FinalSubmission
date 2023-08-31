@@ -11,6 +11,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class MainActivity : AppCompatActivity() {
 	private lateinit var rvMotor: RecyclerView
 	private val list = ArrayList<Motor>()
+	private lateinit var bottomNavigationView: BottomNavigationView
 
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
@@ -22,8 +23,12 @@ class MainActivity : AppCompatActivity() {
 		list.addAll(getListMotor())
 		showRecyclerList()
 
-		val bottomNavigation: BottomNavigationView = findViewById(R.id.bottom_navigation)
-		bottomNavigation.setOnNavigationItemSelectedListener { menuItem ->
+		bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+		val emptyItem = bottomNavigationView.menu.findItem(R.id.navigation_empty)
+			emptyItem.isEnabled = false
+			emptyItem.isVisible = false
+
+		bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
 			when (menuItem.itemId) {
 				R.id.navigation_home -> {
 					true

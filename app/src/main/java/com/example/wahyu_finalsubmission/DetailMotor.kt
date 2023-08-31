@@ -8,8 +8,10 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class DetailMotor : AppCompatActivity(), View.OnClickListener {
+	private lateinit var bottomNavigationView: BottomNavigationView
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_detail_motor)
@@ -41,6 +43,37 @@ class DetailMotor : AppCompatActivity(), View.OnClickListener {
 
 		val btnDialPhone: Button = findViewById(R.id.dialnumber)
 		btnDialPhone.setOnClickListener(this)
+
+
+		bottomNavigationView = findViewById(R.id.bottom_navigation)
+		val emptyItem = bottomNavigationView.menu.findItem(R.id.navigation_empty)
+		emptyItem.isEnabled = false
+		emptyItem.isVisible = false
+
+		bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+			when (item.itemId) {
+				R.id.navigation_home -> {
+					navigateToHome()
+					return@setOnNavigationItemSelectedListener true
+				}
+				R.id.navigation_about -> {
+					navigateToAbout()
+					return@setOnNavigationItemSelectedListener true
+				}
+				else -> return@setOnNavigationItemSelectedListener false
+			}
+		}
+
+	}
+
+	private fun navigateToHome() {
+		val intent = Intent(this, MainActivity::class.java)
+		startActivity(intent)
+	}
+
+	private fun navigateToAbout() {
+		val intent = Intent(this, About::class.java)
+		startActivity(intent)
 	}
 
 	override fun onClick(v: View?) {
