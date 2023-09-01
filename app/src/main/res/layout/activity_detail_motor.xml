@@ -19,7 +19,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:background="#FFC6AC">
             <TextView
                     android:id="@+id/nama"
                     android:layout_width="wrap_content"
@@ -46,6 +47,7 @@
     <androidx.core.widget.NestedScrollView
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="#FFF6DC"
             app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
             app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
             app:layout_constraintStart_toStartOf="parent"
@@ -235,6 +237,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
+            android:background="#C4C1A4"
             app:menu="@menu/bottom_nav_menu"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
