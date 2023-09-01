@@ -10,6 +10,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class About : AppCompatActivity() {
 	private lateinit var bottomNavigationView: BottomNavigationView
+
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_about)
@@ -38,12 +39,18 @@ class About : AppCompatActivity() {
 					startActivity(Intent(this, MainActivity::class.java))
 					true
 				}
-				else -> false
+				R.id.navigation_about -> {
+					true
+				} else -> false
 			}
 		}
 
 	}
 
+	override fun onResume() {
+		super.onResume()
+		bottomNavigationView.selectedItemId = R.id.navigation_about
+	}
 	fun shareApp(view: View) {
 		val appPackageName = packageName
 		val playStoreLink = "https://play.google.com/store/apps/details?id=$appPackageName"
@@ -55,5 +62,6 @@ class About : AppCompatActivity() {
 
 		startActivity(Intent.createChooser(shareIntent, "Bagikan Aplikasi"))
 	}
+
 
 }
