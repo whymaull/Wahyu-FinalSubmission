@@ -3,6 +3,7 @@ package com.example.wahyu_finalsubmission
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -41,6 +42,18 @@ class About : AppCompatActivity() {
 			}
 		}
 
+	}
+
+	fun shareApp(view: View) {
+		val appPackageName = packageName
+		val playStoreLink = "https://play.google.com/store/apps/details?id=$appPackageName"
+
+		val shareIntent = Intent(Intent.ACTION_SEND)
+		shareIntent.type = "text/plain"
+		shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Bagikan Aplikasi")
+		shareIntent.putExtra(Intent.EXTRA_TEXT, "Coba aplikasi ini: $playStoreLink")
+
+		startActivity(Intent.createChooser(shareIntent, "Bagikan Aplikasi"))
 	}
 
 }
