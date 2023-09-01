@@ -21,7 +21,7 @@ class About : AppCompatActivity() {
 
 		val yourName = "Wahyu Maulana Aditya"
 		val yourEmail = "first.wahyumaul21@gmail.com"
-		val profileImage = resources.getDrawable(R.drawable.profile_picture, null)
+		val profileImage = resources.getDrawable(R.drawable.profile, null)
 
 		nameTextView.text = yourName
 		emailTextView.text = yourEmail
