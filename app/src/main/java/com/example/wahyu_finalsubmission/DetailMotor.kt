@@ -49,6 +49,7 @@ class DetailMotor : AppCompatActivity(), View.OnClickListener {
 		val emptyItem = bottomNavigationView.menu.findItem(R.id.navigation_empty)
 		emptyItem.isEnabled = false
 		emptyItem.isVisible = false
+		bottomNavigationView.selectedItemId = R.id.navigation_empty
 
 		bottomNavigationView.setOnNavigationItemSelectedListener { item ->
 			when (item.itemId) {
@@ -64,6 +65,11 @@ class DetailMotor : AppCompatActivity(), View.OnClickListener {
 			}
 		}
 
+	}
+
+	override fun onResume() {
+		super.onResume()
+		bottomNavigationView.selectedItemId = R.id.navigation_empty
 	}
 
 	private fun navigateToHome() {

@@ -31,7 +31,6 @@ class About : AppCompatActivity() {
 		emptyItem.isVisible = false
 
 		bottomNavigationView.selectedItemId = R.id.navigation_about
-
 		bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
 			when (menuItem.itemId) {
 				R.id.navigation_home -> {
@@ -43,4 +42,5 @@ class About : AppCompatActivity() {
 		}
 
 	}
+
 }

@@ -42,6 +42,11 @@ class MainActivity : AppCompatActivity() {
 		}
 	}
 
+	override fun onResume() {
+		super.onResume()
+		bottomNavigationView.selectedItemId = R.id.navigation_home
+	}
+
 	@SuppressLint("Recycle")
 	private fun getListMotor(): ArrayList<Motor> {
 		val articleName = resources.getStringArray(R.array.article_name)
